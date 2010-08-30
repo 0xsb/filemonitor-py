@@ -1,0 +1,6 @@
+filemonitor.out*
+.*\.pyc
+.*~
+.*\.beam
+config.db
+

@@ -1,0 +1,8 @@
+- dependencies
+  python: 2.6, 3.1
+  PyYAML module # svn checkout http://svn.pyyaml.org/pyyaml/trunk pyyaml
+
+type 'python monitor.py --help' for startoptions
+
+
+  

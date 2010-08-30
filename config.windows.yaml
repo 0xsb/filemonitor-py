@@ -1,0 +1,4 @@
+- !!python/object:__main__.EventDef {action: 'del c:/tmp >> c:/temp/huhu.out', dir: 'c:/temp',
+  maxerrors: 2, minsize: 0, pattern: huhu.*\.txt}
+- !!python/object:__main__.EventDef {action: 'type "{eventdef.dir}" >> c:\temp\hallo.out
+    & del c:\temp\{event.filename}', dir: 'c:/temp', maxerrors: 2, minsize: 0, pattern: hallo.*\.txt}

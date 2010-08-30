@@ -1,0 +1,4 @@
+- !!python/object:__main__.EventDef {action: rm /tmp >> /tmp/huhu.out, dir: /tmp,
+  maxerrors: 2, minsize: 0, pattern: huhu.*\.txt}
+- !!python/object:__main__.EventDef {action: 'echo "{eventdef.dir}" >> /tmp/hallo.out;
+    rm /tmp/{event.filename}', dir: /tmp, maxerrors: 2, minsize: 0, pattern: hallo.*\.txt}
