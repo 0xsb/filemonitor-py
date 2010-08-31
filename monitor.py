@@ -239,8 +239,8 @@ def main():
                                     "logfilesize=", 
                                     "backupcount=", 
                                     "dynamic", "logging", "verbose", "help", "test",])
-    except getopt.GetoptError, err:
-        print str(err) # will print something like "option -a not recognized"
+    except getopt.GetoptError as err:
+        print(str(err)) # will print something like "option -a not recognized"
         usage()
         sys.exit(2)
     global logger
@@ -282,7 +282,7 @@ def main():
     eventdefs = []
 
     if test:
-	if os.name == 'posix':
+        if os.name == 'posix':
             # UNIX version
             os.system("touch /tmp/huhuralf.txt /tmp/halloralf.txt /tmp/hallo1234.txt")
             e1 = EventDef("/tmp", "huhu.*\.txt", "rm /tmp >> /tmp/huhu.out")
