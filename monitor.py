@@ -2,7 +2,6 @@ import time
 import os
 import re
 import sys
-import string
 import logging
 import logging.handlers
 import yaml
@@ -29,7 +28,7 @@ def init_logger(verbose=True,
         # File logger
         filehandler = logging.handlers.RotatingFileHandler(logfilename, 
                                                            maxBytes=logfilesize, 
-                                                           backupCount=cackupcount)
+                                                           backupCount=backupcount)
         filehandler.setFormatter(formatter)
         logger.addHandler(filehandler)
     
